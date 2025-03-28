@@ -1,0 +1,14 @@
+node_modules/
+build/
+
+# Archivos de registro y temporales
+*.log
+*.tmp
+*.swp
+*.swo
+
+
+# Archivos de configuración local
+.env
+config.json
+secrets.json

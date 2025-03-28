@@ -1,0 +1,34 @@
+.contenido-nosotros {
+    @include tablet {
+        @include grid(2, 2rem);
+    }
+}
+
+.texto-nosotros blockquote {
+    font-weight: $black;
+    font-size: 2.2rem;
+    margin: 0;
+    padding-left: 1rem 0 3rem 0;
+    
+}
+
+/* logo de whatsapp */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+}
+.fa-whatsapp {
+   font-size: 60px;
+
+}
+.float:hover {
+   background-color: #18e463;
+}

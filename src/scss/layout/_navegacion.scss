@@ -1,0 +1,64 @@
+.barra {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+// en_header.scss se define una anchura para el logo, asi como un maximo de anchura 
+.barra {
+    .logo-header {
+        max-width: 100%;
+        width: 28rem;
+        height: auto;
+    }
+}
+.principal {
+    a {
+        font-size: 3rem;
+    }
+} 
+
+.navegacion {
+    display: none;
+    @include tablet {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: rgb(249, 94, 10);
+        text-decoration:none;
+        font-size: 2.7rem;
+        font-weight: 900;
+        display: block;
+        text-align: center;
+        @include tablet {
+            margin-right: 1.8rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/* menu de amburguesa */
+.mobile-menu {
+     @include tablet {
+        display: none; 
+     }
+     img {
+        width: 5rem;
+     }
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+}

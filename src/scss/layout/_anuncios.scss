@@ -1,0 +1,48 @@
+.anuncios {
+    // background-color: #8b8686;
+    padding: 40px;
+    // width: 8rem;
+    // height: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    //codigo de gpt 4
+    background: linear-gradient(45deg, #d5d6d3, #666);
+    color: #ffffff;
+    padding: 20px 0;
+    p {
+      margin-left: 10px;
+      color:black;
+    }
+  
+  }
+  .parrafo {
+    color: white;
+  }
+  .planos {
+    background-image: url('../../../build/img/clockwork-4651185_1920.jpg');
+    background-position: bottom;
+     h1 {
+      color: white;
+    }
+  }
+  .fondo {
+    background: url('../../../build/img/fondoplanos.jpg');
+    
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  .precio {
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+  }
+  .division {
+    border-bottom: 1px solid white;
+  }
