@@ -6,13 +6,13 @@
     padding: 3rem;
 }
 .contenedor-anuncios {
-    padding: 2rem;
+    // padding: 2rem;
     span {
         font-size: 3rem;
     }
 }
 @media (min-width: 768px) {
-    .contenedor-anuncios {
+    .contenedor-interes {
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(2, 1fr);

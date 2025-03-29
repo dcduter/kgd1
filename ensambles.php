@@ -1,0 +1,118 @@
+<?php 
+require "includes/funciones.php";
+// $inicio = false;
+
+incluirTemplate('header');
+?>
+
+    <main class="contenedor seccion">
+    <!-- //propiedad para centrar a 800px contenido-centrado -->
+        <h1>Modelado 3D y Ensamble</h1>
+        
+        <p class="parrafo">Realizamos proyectos mediante muestras fabricadas, generando planos, modelados 3D y documentos de información técnica a la disposición del cliente</p><br>
+
+        <!-- <p class="parrafo">El modelado 3D con ensamble es una técnica en la que se crean representaciones tridimensionales de componentes individuales y se combinan en un ensamblaje completo. Este proceso permite visualizar cómo interactúan las piezas entre sí y evaluar el diseño antes de la fabricación. Las herramientas de software CAD (Diseño Asistido por Computadora) son comúnmente utilizadas para este propósito, facilitando la creación de modelos precisos y la simulación de movimientos y ensamblajes.</p><br> -->
+        <p class="precio">Modela con Ecuaciones</p>
+        <picture class="division">
+            <!-- <source srcset="build/img/destacada.webp" type="image/webp"> -->
+            <source srcset="build/img/Modelado con ecuaciones - copia.jpg" type="image/jpeg">
+            <img loading="lazy" src="build/img/Modelado con ecuaciones - copia.jpg" alt="casa">
+
+            <ol class="precio"></ol>
+        </picture>
+   
+        <div class="resumen-propiedad">
+        
+        </div>
+        <div class="contenedor-anuncios">
+            <section class="anuncios">
+        
+                <picture>
+                    <!-- <source srcset="build/img/anuncio3.webp" type="image/webp"> -->
+                    <source srcset="build/img/Analisis de Esfuerzos - copia.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/Analisis de Esfuerzos - copia.jpg" alt="anuncio">
+                </picture>
+            </section>
+        
+            <section class="anuncios">
+        
+                <picture>
+                    <!-- <source srcset="build/img/anuncio3.webp" type="image/webp"> -->
+                    <source srcset="build/img/Ensambles - copia.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/Ensambles - copia.jpg" alt="anuncio">
+                </picture>
+            </section>
+        
+            <section class="anuncios">
+        
+        
+                <picture>
+                    <!-- <source srcset="build/img/anuncio3.webp" type="image/webp"> -->
+                    <source srcset="build/img/Sistema Biomedico.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/Sistema Biomedico.jpg" alt="anuncio">
+                </picture>
+                <!-- <p class="precio">Proyeco Personalizado</p> -->
+            </section>
+        
+            <section class="anuncios">
+        
+                <picture>
+                    <!-- <source srcset="build/img/anuncio3.webp" type="image/webp"> -->
+                    <source srcset="build/img/modeladod 3d.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/modeladod 3d.jpg" alt="anuncio">
+                </picture>
+            </section>
+            <section class="anuncios">
+        
+                <picture>
+                    <!-- <source srcset="build/img/anuncio3.webp" type="image/webp"> -->
+                    <source srcset="build/img/Modelado 1 - copia.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/Modelado 1 - copia.jpg" alt="anuncio">
+                </picture>
+                <!-- <div class="contenedor-anuncio">
+                    <h3>Ensamble</h3>
+                    <p>Ensamble para una pieza de una motocicleta</p>
+                    <p class="precio">Proyeco Personalizado</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">
+                            <p>4</p>
+                        </li>
+                    </ul>
+                    <a class="boton boton-amarillo" href="anuncios.php">
+                        Más información
+                    </a>
+                </div> .contenedor-anuncio -->
+            </section>
+        </div>
+
+        <section class="listado-precios" >
+            <h2>Listado de Precios</h2>
+            <div class="contenedor-listado">
+                <div class="precio">
+                    <h3>Modelado Básisco  + Plano (Modo Básico) $20.000</h3>
+                </div>
+                <div class="precio">
+                    <h3>4 Piezas Modeladas + Ensable (Estándar) $40.000</h3>
+                </div>
+                <div class="precio">
+                    <h3>Modelado de Piezas + Ensamble Plano (Premiun) $80.000</h3>
+                </div>
+                <div class="precio">
+                    <h3>Proyectos Personalizados</h3>
+                </div>
+
+            </div>
+        </section>
+  
+           
+    </main>
+    <?php incluirTemplate('footer'); ?>

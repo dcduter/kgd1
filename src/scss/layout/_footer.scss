@@ -13,3 +13,11 @@
         font-size:2.2rem;   
     }
 }
+
+.navegacion{
+   a {
+    &:hover {
+        color: $blanco;
+    }
+   }
+}

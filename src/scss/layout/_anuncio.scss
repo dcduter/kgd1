@@ -4,20 +4,7 @@
     }
 }
 
-.anuncio {
-    background-color: lighten($gris, 5);
-    border: 1px solid darken($gris, 10);
-    .contenedor-anuncio {
-        padding: 2rem;
-    }
-    h3, p {
-        margin: 0;
-    }
-    .precio {
-        color: $verde;
-        font-weight: $bold;
-    }
-}
+
 
 .iconos-caracteristicas {
     display: flex;

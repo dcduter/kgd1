@@ -24,7 +24,7 @@
 @mixin boton ($bgcolor, $display ) {
     background-color: $bgcolor ;
     color: $blanco;
-    font-weight: $bold;
+    font-weight: 900;
     text-decoration: none;
     padding: 1rem 3rem;
     text-align: center;
