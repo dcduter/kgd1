@@ -10,6 +10,7 @@ incluirTemplate('header', $inicio = true);
         
         <img src="build/img/5305167_call_chat_mobile_whatsapp_whatsapp logo_icon.png" alt="icono de whatsapp">
     </a>
+    <!-- fin enlace a whatsapp -->
     <main class="contenedor seccion">
             <h2 class="parrafo">Más Sobre Nosotros</h2>
             <div class="iconos-nosotros">

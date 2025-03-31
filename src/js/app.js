@@ -10,6 +10,7 @@ function addEventListener (){
     })
 }
 function navegacionResponsibe () {
+    
     const navegacion = document.querySelector('.navegacion');
 
     if(navegacion.classList.contains('mostrar')){

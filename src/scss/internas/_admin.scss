@@ -1,0 +1,38 @@
+.alerta {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 1rem;
+    &.exito {
+        background-color: #71f04e;
+        
+    }
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    thead {
+        background-color: #84ed3f;
+        th {
+            color: white;
+            padding: 2rem;
+           
+        }
+    }
+    .imagen-tabla {
+        width: 100px;
+
+    }
+
+   
+}
+.imagen-small {
+    width: 30rem;
+}
+.w-100 {
+    width: 100%;
+    // background-color: red;
+}
