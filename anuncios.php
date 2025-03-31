@@ -7,7 +7,7 @@ incluirTemplate('header');
 
     <main class="contenedor seccion">
         <section class="anuncio">
-          <a href="ensambles.php" class="animated-button"><h3>Modelado y Ensamble</h3></p>
+          <a href="ensambles.php" class="animated-button"><h3>Modelado 3D y Ensamble</h3></p>
            
             <br>
           

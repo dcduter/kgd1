@@ -40,6 +40,6 @@
           </nav>
         </div>
         <!--.barra-->
-        
+        <?php echo $inicio ? '<h1>Diseño Mecanico Profesional</h1>' : ''; ?>
       </div>
     </header>  <!-- fin header -->

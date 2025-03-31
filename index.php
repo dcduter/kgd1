@@ -4,8 +4,7 @@ require "includes/funciones.php";
 
 incluirTemplate('header', $inicio = true);
 ?>
-    <h1 class="parrafo">Diseño Mecanico Profesional</h1>
-     <!-- enlace a whatsapp -->
+    <!-- enlace a whatsapp -->
      <a href="https://api.whatsapp.com/send?phone=+3150001120&text=Quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="float">
         
         <img src="build/img/5305167_call_chat_mobile_whatsapp_whatsapp logo_icon.png" alt="icono de whatsapp">
@@ -34,96 +33,10 @@ incluirTemplate('header', $inicio = true);
     </main>
     <section class="seccion contenedor">
         <h2 class="parrafo">Servicios</h2>
-        <div class="contenedor-anuncios">
-            <div class="anuncios">
-                <picture>
-                    <source srcset="build/img/Mano implante biomedico .webp" type="image/webp">
-                    <source srcset="build/img/Mano implante biomedico .jpg" type="image/jpg">
-                    <img loading="lazy" src="build/img/Mano implante biomedico .jpg" alt="anuncio">
-                </picture>
-                <div class="contenedor-anuncio">
-                    <h3>Implante de Mano</h3>
-                    <p>Diseño de uno protesis para la mano derecha</p>
-                    <p class="precio">Precio: $20000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">
-                            <p>4</p>
-                        </li>
-                    </ul>
-                    <a class="boton boton-amarillo" href="anuncios.php">
-                        Más información
-                    </a>
-                </div>
-            </div>
-            <div class="anuncios">
-                <picture>
-                    <source srcset="build/img/Modelado 3 - copia.webp" type="image/webp">
-                    <source srcset="build/img/Modelado 3 - copia.jpg" type="image/jpg">
-                    <img loading="lazy" src="build/img/Modelado 3 - copia.jpg" alt="anuncio">
-                </picture>
-                <div class="contenedor-anuncio">
-                    <h3>Modelado 3D</h3>
-                    <p>Modelado de una pieza metalica</p>
-                    <p class="precio">Precio: $40000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">
-                            <p>4</p>
-                        </li>
-                    </ul>
-                    <a class="boton boton-amarillo" href="anuncios.php">
-                        Más información
-                    </a>
-                </div> <!--.contenedor-anuncio-->
-            </div><!--anuncio-->
-            <div class="anuncios">
-                <picture>
-                    <source srcset="build/img/Ensamble 2 - copia.webp" type="image/webp">
-                    <source srcset="build/img/Ensamble 2 - copia.jpg" type="image/jpg">
-                    <img loading="lazy" src="build/img/Ensamble 2 - copia.jpg" alt="anuncio">
-                </picture>
-                <div class="contenedor-anuncio">
-                    <h3>Ensamble</h3>
-                    <p>Ensamble para una pieza de una motocicleta</p>
-                    <p class="precio">Proyeco Personalizado</p><br>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
-                            <p>3</p>
-                        </li>
-                        <li>
-                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">
-                            <p>4</p>
-                        </li>
-                    </ul>
-                    <a class="boton boton-amarillo" href="anuncios.php">
-                        Más información
-                    </a>
-                </div> <!--.contenedor-anuncio-->
-            </div><!--anuncio-->
-
-        </div><!--.conteneder-anuncios-->
+        <?php 
+            $limite = 3;
+            include "includes/templates/anuncios.php";
+        ?>
 
         <div class="ver-todas">
             <a class="boton-verde" href="anuncios.php">Todos</a>

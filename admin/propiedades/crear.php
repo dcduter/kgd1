@@ -56,10 +56,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
         $errores[] = "El vendedor es obligatorio";
     }
     //validar por tamaño
-    $medida = 1000 * 1000;
+    $medida = 2000 * 2000;
 
     if ($imagen['size'] > $medida) {
-        $errores[] = "La imagen no puede pesar más de 1MB";
+        $errores[] = "La imagen no puede pesar más de 2MB";
     }
 
 
