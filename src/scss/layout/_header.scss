@@ -12,11 +12,11 @@
     background-image: url(../img/engranajes2.webp);
     // background-repeat: no-repeat;
      
-        // background: linear-gradient(
-        //     270deg,
-        //     rgba($negro, 60%), // su funcion es para darle un color mas oscuro
-        //     rgba(color.adjust($negro, $lightness: -20%), 90%) // funcion es para darle un color mas oscuro, darken ya no funciona porque se usa la libreria sass
-        // );
+    //     background: linear-gradient(
+    //         270deg,
+    //         rgba($negro, 60%), // su funcion es para darle un color mas oscuro
+    //         rgba(color.adjust($negro, $lightness: -20%), 90%) // funcion es para darle un color mas oscuro, darken ya no funciona porque se usa la libreria sass
+    //     );
         inset: 0;// 
     
     background-position: left;
@@ -49,8 +49,9 @@
     
     h1 {
         text-align: left;
-        color: green;
+        color: rgb(255, 255, 255);
         font-weight: $bold;
+        font-size: 4.5rem;
         line-height: 2;
         max-width: 70rem;
         max-width: 40rem;

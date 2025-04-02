@@ -1,7 +1,13 @@
 <?php 
 // base de datos
 require "../../includes/config/database.php";
+require "../../includes/funciones.php";
 $db = conectarDB();
+$auth = estaAutenticado();
+
+if (!$auth) {
+    header('Location: /');
+}
 
 //consultar obtener los vendedores
 $consulta = "SELECT * FROM vendedores";
@@ -17,7 +23,7 @@ $imagen = '';
 $seccion = ''; /* permite crear la variable $seccion */
 $vendedores_id = ''; /* permite crear la variable $vendedores_id */
 
-require "../../includes/funciones.php";
+
 // $inicio = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la solicitud  al dar click en crear plano*/
@@ -93,11 +99,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
 
 incluirTemplate('header');
 ?>
-    <main class="contenedor seccion">
+    <main class="contenedor seccion top">
         <h1>Crear Planos</h1>
-
-        <p class="parrafo">Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p>
-  
         <a href="/admin" class="boton boton-verde">Volver</a>
 
         <?php foreach($errores as $error): ?>
@@ -140,7 +143,7 @@ incluirTemplate('header');
                 </select>
                     
             </fieldset>
-            <input type="submit" value="Crear Planos" class="boton boton-verde">
+            <input type="submit" value="Crear Plano" class="boton boton-verde">
         </form>
     </main>
     <?php incluirTemplate('footer'); ?>

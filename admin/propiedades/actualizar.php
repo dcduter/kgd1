@@ -1,4 +1,10 @@
 <?php 
+require "../../includes/funciones.php";
+$auth = estaAutenticado();
+
+if(!$auth) {
+    header('Location: /');
+}
 // validar la url por id valido
 $id = $_GET['id'];
 $id = filter_var($id, FILTER_VALIDATE_INT);
@@ -30,7 +36,7 @@ $imagenPlano = $plano['imagen'];
 $seccion = $plano['seccion']; /* permite crear la variable $seccion */
 $vendedores_id = $plano['vendedores_id']; /* permite crear la variable $vendedores_id */
 
-require "../../includes/funciones.php";
+
 // $inicio = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la solicitud  al dar click en crear plano*/
@@ -136,10 +142,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
 
 incluirTemplate('header');
 ?>
-    <main class="contenedor seccion">
+    <main class="contenedor seccion top">
         <h1>Actualizar</h1>
 
-        <p class="parrafo">Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p>
+        <p >Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p>
   
         <a href="/admin" class="boton boton-verde">Volver</a>
 

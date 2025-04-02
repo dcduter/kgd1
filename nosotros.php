@@ -4,23 +4,23 @@ require "includes/funciones.php";
 
 incluirTemplate('header');
 ?>
-    <main class="contenedor seccion">
+    <main class="contenedor seccion top">
         <h1>Conoce Sobre Nosotros</h1>
         <div class="contenido-nosotros">
             <div class="imagen">
                 <picture>
                     <!-- <source srcset="build/img/nosotros.webp" type="image/webp">
                     <source srcset="build/img/nosotros.jpg" type="image/jpeg"> -->
-                    <img loading="lazy" src="build/img/Simbolo KGD.png" alt="imagen sobre nosotros">
+                    <img loading="lazy" src="build/img/Simbolo-KGD.webp" alt="imagen sobre nosotros">
                 </picture>
             </div>
             <div class="texto-nosotros">
                 <blockquote>
-                    <p class="parrafo">Más de 7 años de experiencia</p>
+                    <p >Más de 7 años de experiencia</p>
                 </blockquote>
-                <p class="parrafo">Somos un emprendimiento que se enfoca en el área de diseño mecánico, en el cual mediante software CAD generamos piezas y ensamblajes, respecto a las necesidades de nuestros clientes. </p>
-                <p class="parrafo">También nos especializamos en desarrollar planos de piezas mecánicas aplicando el concepto de Ingeniera Inversa.</p>
-                <p class="parrafo">Trabajamos para empresas en diferentes campos de mecánica, y también en el área universitaria.</p>
+                <p >Somos un emprendimiento que se enfoca en el área de diseño mecánico, en el cual mediante software CAD generamos piezas y ensamblajes, respecto a las necesidades de nuestros clientes. </p>
+                <p >También nos especializamos en desarrollar planos de piezas mecánicas aplicando el concepto de Ingeniera Inversa.</p>
+                <p >Trabajamos para empresas en diferentes campos de mecánica, y también en el área universitaria.</p>
             </div>
         </div> <br><br><!-- contenido-nosotros -->
        
@@ -35,13 +35,13 @@ incluirTemplate('header');
                 </picture>
             </div> -->
             <div class="texto-nosotros">
-                <h3 class="parrafo">Trabajos universitarios</h3>
+                <h3 >Trabajos universitarios</h3>
               
-                <p class="parrafo">Hemos realizado trabajos para el área biomédica enfocados en implantes médicos, estudios de esfuerzos, planos y modelados sencillos en 3D. </p>
+                <p >Hemos realizado trabajos para el área biomédica enfocados en implantes médicos, estudios de esfuerzos, planos y modelados sencillos en 3D. </p>
 
-                <h3 class="parrafo">Trabajos Empresariales </h3>
+                <h3 >Trabajos Empresariales </h3>
               
-                <p class="parrafo">Realizando proyectos en el área de la industria farmacéutica, metalmecánica. Donde todos nuestros servicios de diseño están incluidos.  </p>
+                <p >Realizando proyectos en el área de la industria farmacéutica, metalmecánica. Donde todos nuestros servicios de diseño están incluidos.  </p>
                
             </div>
         </section> <!-- contenido-nosotros -->

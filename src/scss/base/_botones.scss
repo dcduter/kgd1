@@ -8,7 +8,9 @@
 .boton-verde {
     @include boton ($verde, inline-block);
 }
-
+.boton-rojo {
+    @include boton (red, inline-block);
+}
 .ver-todas {
     justify-content: left;
     font-size: larger;

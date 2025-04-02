@@ -1,11 +1,33 @@
+.derecha {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     @include tablet {
+        align-items: flex-end;
+     }
+}
+
+.dark-mode-boton {
+     width: 4rem;   
+     margin-top: 3rem;
+     margin-bottom: 2rem;
+    filter: invert(100%);
+     &:hover {
+        cursor: pointer;
+     }
+     @include tablet {
+        margin-top: 0;
+     }
+}
+
 .barra {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-end;
     }
 }
 // en_header.scss se define una anchura para el logo, asi como un maximo de anchura 
@@ -23,10 +45,19 @@
 } 
 
 .navegacion {
-    display: none;
+    // display: none;
+    transition: .3s ease-in-out, opacity .3s ease-in-out linear, height .5s; // permite animar la transicion de la navegacion
+    // visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
     @include tablet {
         display: flex;
         align-items: center;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        visibility: visible;
     }
 
     a {
@@ -56,9 +87,13 @@
 }
 
 .mostrar {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    opacity: 1;
+    height: auto;
+    // flex-direction: column;
     @include tablet {
         flex-direction: row;
     }
 }
+
+

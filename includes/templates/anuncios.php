@@ -26,15 +26,12 @@ $resultado = mysqli_query($db, $query);
                     <ul class="iconos-caracteristicas">
                         <li>
                             <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc">
-                            <p>3</p>
                         </li>
                         <li>
                             <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
-                            <p>3</p>
                         </li>
                         <li>
-                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">
-                            <p>4</p>
+                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">   
                         </li>
                     </ul>
                     <!-- <a class="boton boton-amarillo" href="anuncio.php?id=<?php echo $plano['id']; ?>">Ver más</a> -->

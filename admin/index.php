@@ -1,4 +1,11 @@
 <?php
+require "../includes/funciones.php";
+$auth = estaAutenticado();
+
+if(!$auth) {
+    header('Location: /');
+}
+
 // conectar base de datos
 require '../includes/config/database.php';
 $db = conectarDB();
@@ -37,13 +44,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 }
 
-// incluye template
-require "../includes/funciones.php";
 // $inicio = false;
 
 incluirTemplate('header');
 ?>
-    <main class="contenedor seccion">
+    <main class="contenedor seccion top">
         <h1>Administrador de Planos</h1>
         <?php if ($resultado == 1): ?>
             <p class="alerta exito">Plano creado correctamente</p>
@@ -55,7 +60,7 @@ incluirTemplate('header');
 
         <a href="/admin/propiedades/crear.php" class="boton boton-verde">Agregar Planos</a>
 
-        <!-- <p class="parrafo">Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p> -->
+        <!-- <p >Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p> -->
 
         <table class="propiedades">
             <thead>
@@ -76,9 +81,9 @@ incluirTemplate('header');
                     <td> <img src="/imagenes/<?php echo $plano['imagen']; ?>" class="imagen-tabla"> </td>
                     <td><?php echo $plano['precio']; ?></td>
                     <td>
-                        <form action="" method="POST" class="w-100">
+                        <form action="" method="POST">
                             <input type="hidden" name="id" value="<?php echo $plano['id']; ?>">
-                            <input type="submit" class="boton-amarillo" value="Eliminar">
+                            <input type="submit"  class="boton-rojo" value="Eliminar">
                         </form>
                         
                         <a href="admin/propiedades/actualizar.php?id=<?php echo $plano['id']; ?>" class="boton-amarillo">Editar</a>

@@ -4,7 +4,26 @@
     }
 }
 
-
+.anuncios {
+  // background-color: #8b8686;
+  padding: 40px;
+  // width: 8rem;
+  // height: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  //codigo de gpt 4
+  background: linear-gradient(45deg, #d5d6d3, #666);
+  color: #ffffff;
+  padding: 20px 0;
+  p {
+    margin-left: 10px;
+    color: white;
+  }
+}
 
 .iconos-caracteristicas {
     display: flex;
@@ -24,28 +43,7 @@
     
 }
 
-.anuncio {
-    // background-color: hsl(0, 2%, 54%);
-    padding: 30px;
-    // width: 8rem;
-    // height: auto;
-    margin-bottom: 50px;
-    // border: 1px solid #ddd;
-    border-radius: 50%;
-    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    //codigo de gpt 4
-    background: linear-gradient(100deg, #e5f1b8, #666,  #e5f1b8);
-    // color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-    h3{
-      font-size: 5rem;
-    }
-    p, a {
-      margin-left: 2rem;
-    }
-  
-  }
+
   
   h3 {
     margin-top: 0;

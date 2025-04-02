@@ -6,12 +6,14 @@
 }
 
 .imagen-contacto {
+  
     background-position: center center;
     background-size: cover;
     padding: $separacion * 2 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 
     h2 {
         font-size: 4rem;
@@ -19,7 +21,12 @@
         color: $blanco;
     }
     p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: $blanco;
     }
+}
+
+.imagen-logo {
+    max-width: 100rem;
+    margin: 0 auto;
 }

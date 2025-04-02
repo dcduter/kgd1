@@ -32,3 +32,21 @@
 .float:hover {
    background-color: #18e463;
 }
+
+@include tablet {
+    .contenedor.seccion {
+        &.top {
+            margin-top: 15rem;
+        }
+    }
+}
+
+@include tablet {
+    .header.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+}

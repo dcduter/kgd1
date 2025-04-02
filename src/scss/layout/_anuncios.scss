@@ -1,33 +1,34 @@
 
-
-.anuncios {
-    // background-color: #8b8686;
-    padding: 40px;
-    // width: 8rem;
-    // height: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    margin-right: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    //codigo de gpt 4
-    background: linear-gradient(45deg, #d5d6d3, #666);
-    color: #ffffff;
-    padding: 20px 0;
-    p {
-      margin-left: 10px;
-      color: white;
-    }
+@use 'base/variables';
+.anuncio {
+  // background-color: hsl(0, 2%, 54%);
+  padding: 30px;
+  // width: 8rem;
+  // height: auto;
+  margin-bottom: 50px;
+  // border: 1px solid #ddd;
+  border-radius: 50%;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  //codigo de gpt 4
+  background: linear-gradient(100deg, #e5f1b8, #666,  #e5f1b8);
+  // color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  h3{
+    font-size: 5rem;
   }
+  p, a {
+    margin-left: 2rem;
+  }
+
+}
   
-  // .planos {
-  //   background-image: url('../../../build/img/clockwork-4651185_1920.jpg');
-  //   background-position: bottom;
-    
-  // }
-  .fondo {
+  .fondos {
     background: url('../../../build/img/fondoplanos.jpg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
     
   }
 
@@ -36,6 +37,7 @@
   }
 
   .anuncio {
+    
     background-color: lighten($gris, 5);
     border: 1px solid darken($gris, 10);
     .contenedor-anuncio {
@@ -48,16 +50,12 @@
         color: $verde;
         font-weight: $bold;
     }
+    p {
+      font-family: $fuente_principal;
+      font-size: 4rem;
+      padding: 4rem;
+    }
 }
-.contenedor {
-  h1 {
-    color: rgb(36, 222, 247);
-  }
-}
-// .parrafo {
-//   color: white;
-//   font-size: 2.4rem;
-// }
 .precio {
   color: white;
   font-size: 2.4rem;
