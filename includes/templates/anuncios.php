@@ -31,7 +31,7 @@ $resultado = mysqli_query($db, $query);
                             <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
                         </li>
                         <li>
-                            <img loading="lazy" src="build/img/geometry_icon.png" alt="icono dormitorio">   
+                            <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono dormitorio">   
                         </li>
                     </ul>
                     <!-- <a class="boton boton-amarillo" href="anuncio.php?id=<?php echo $plano['id']; ?>">Ver más</a> -->

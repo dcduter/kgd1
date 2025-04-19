@@ -7,20 +7,20 @@ incluirTemplate('header', $inicio = true);
     <main class="contenedor seccion top">
             <h2 >Más Sobre Nosotros</h2>
             <div class="iconos-nosotros">
-                <div class="icono">
+                <!-- <div class="icono">
                     <img src="build/img/icono1.svg" alt="icono seguridad" loading="lazy">
                     <h4>seguridad</h4>
                     <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptates, iusto laboriosam deleniti veritatis molestiae! Unde, quae perspiciatis esse ipsum omnis iusto quia mollitia atque placeat quis, exercitationem animi. At.</p>
-                </div>
+                </div> -->
                 <div class="icono">
                     <img src="build/img/icono2.svg" alt="icono seguridad" loading="lazy">
                     <h4>Precio</h4>
-                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptates, iusto laboriosam deleniti veritatis molestiae! Unde, quae perspiciatis esse ipsum omnis iusto quia mollitia atque placeat quis, exercitationem animi. At.</p>
+                    <p >Nuestros precios son los mas competitivos para cualquier diseño o ensamble 3D.</p>
                 </div>
                 <div class="icono">
                     <img src="build/img/icono3.svg" alt="icono seguridad" loading="lazy">
                     <h4>A Tiempo</h4>
-                    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptates, iusto laboriosam deleniti veritatis molestiae! Unde, quae perspiciatis esse ipsum omnis iusto quia mollitia atque placeat quis, exercitationem animi. At.</p>
+                    <p >Contamos con un equipo de profesionales altamente calificados para brindarte un servicio de calidad.</p>
                 </div>
             </div> 
         <!-- <p>Imagen de <a href="https://www.freepik.es/vector-gratis/fondo-abstracto-blanco_12066094.htm#query=fondo%20gris&position=0&from_view=keyword&track=ais_hybrid&uuid=a06748ff-4107-4b42-9be5-075fdb4eb75b"></a></p> -->

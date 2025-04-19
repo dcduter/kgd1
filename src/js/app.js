@@ -3,16 +3,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     darkMode();
 });
-// boton de cambio de tema
+// ----------------boton de cambio de tema------------------------
 function darkMode() {
     const darkMode = document.querySelector('.dark-mode-boton'); // selecciona el boton de cambio de tema
     darkMode.addEventListener('click', function() { // agrega un evento de click
         document.body.classList.toggle('dark-mode'); // al dar click se agrega o quita la clase dark-mode
-    });
-
-    
+        // Guardar en localStorage
+        localStorage.setItem('modoOscuro', document.body.classList.contains('dark-mode'));
+    });   
 }
 
+// Verificar si hay un modo guardado al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    const modoGuardado = localStorage.getItem('modoOscuro');
+    if (modoGuardado === 'true') {
+        document.body.classList.add('dark-mode');
+        const boton = document.querySelector('.dark-mode-boton');
+        if (boton) {
+            boton.src = '/build/img/dark-mode.svg';
+        }
+    }
+});
+//-----------------------------------------------------------------
 
 function addEventListener (){
     const mobileMenu = document.querySelector('.mobile-menu');

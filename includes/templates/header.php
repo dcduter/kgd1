@@ -11,7 +11,24 @@ $auth = $_SESSION['login'] ?? false;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KGD Diseño</title>
+     <!-- SEO y Metadatos -->
+     <meta name="description" content="KGD Diseño - Diseño mecánico profesional, ensambles 3D y renderizado de productos. Soluciones innovadoras para tu proyecto industrial.">
+    <meta name="keywords" content="diseño mecánico, ensamble 3D, renderizado productos, diseño industrial, ingeniería mecánica, CAD, diseño de productos">
+    <meta name="author" content="Juan Cifuentes">
+     <!-- SEO Adicional -->
+     <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/build/img/logo_engrenaje2.svg">
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="/build/css/app.css" as="style">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://solucioneskgd.website">
+    <title>KGD Diseño Mecánico</title>
     <link rel="stylesheet" href="/build/css/app.css" />
   </head>
   <body>
@@ -26,11 +43,7 @@ $auth = $_SESSION['login'] ?? false;
       <div class="contenedor contenido-header">
         <div class="barra">
           <a href="/">
-            <img
-              class="logo-header"
-              src="/build/img/corregido3-svg.svg"
-              alt="logo de bienes raices"
-            />
+            <img class="logo-header" src="/build/img/logo_grande.svg" alt="logo de bienes raices" /> <!-- logo -->
           </a>
           <div class="mobile-menu">
             <img src="/build/img/barras.svg" alt="icono menu responsibe" />
@@ -42,6 +55,7 @@ $auth = $_SESSION['login'] ?? false;
               <a href="anuncios.php">Trabajos</a>
               <a href="blog.php">Clientes</a>
               <a href="contacto.php">Contactenos</a>
+              <!-- boton para cerrar sesion en caso de que el usuario este logueado -->
               <?php if($auth): ?>
                 <a href="cerrar-sesion.php">Cerrar Sesión</a>
               <?php endif; ?>

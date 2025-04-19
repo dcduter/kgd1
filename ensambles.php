@@ -10,8 +10,7 @@ incluirTemplate('header');
         <h1>Modelado 3D y Ensamble</h1>
         
         <p >Realizamos proyectos mediante muestras fabricadas, generando planos, modelados 3D y documentos de información técnica a la disposición del cliente</p><br>
-
-        <!-- <p >El modelado 3D con ensamble es una técnica en la que se crean representaciones tridimensionales de componentes individuales y se combinan en un ensamblaje completo. Este proceso permite visualizar cómo interactúan las piezas entre sí y evaluar el diseño antes de la fabricación. Las herramientas de software CAD (Diseño Asistido por Computadora) son comúnmente utilizadas para este propósito, facilitando la creación de modelos precisos y la simulación de movimientos y ensamblajes.</p><br> -->
+        
         <p class="precio">Modelado con Ecuaciones</p>
         <picture class="division">
             <!-- <source srcset="build/img/destacada.webp" type="image/webp"> -->

@@ -31,5 +31,7 @@
             background-color: darken($naranja, 10%);
         }
     }
+    .iconos-caracteristicas {
+        filter: brightness(0) invert(1); // inverte el color de las imágenes 
+    }
 }
-
