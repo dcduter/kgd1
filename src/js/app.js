@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 // ----------------boton de cambio de tema------------------------
 function darkMode() {
+    const prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+     if (prefiereDarkMode.matches){
+        document.body.classList.add('dark-mode');
+     }else {
+        document.body.classList.remove('dark-mode')
+     }
+     prefiereDarkMode.addEventListener('change', function (){
+        if (prefiereDarkMode.matches){
+            document.body.classList.add('dark-mode');
+         }else {
+            document.body.classList.remove('dark-mode')
+         }
+     })
     const darkMode = document.querySelector('.dark-mode-boton'); // selecciona el boton de cambio de tema
     darkMode.addEventListener('click', function() { // agrega un evento de click
         document.body.classList.toggle('dark-mode'); // al dar click se agrega o quita la clase dark-mode

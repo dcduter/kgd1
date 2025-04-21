@@ -14,24 +14,42 @@
             color: $verde;
         }
     }
-    .formulario {
+//     .formulario {
+//         color: $blanco;
+//         input {
+//             background-color: red;
+//         }
+//         textarea {
+//             background-color: $gris;
+//         }
+//         select {
+//             background-color: $gris;
+//         }
+//     }
+//     input.boton-verde{
+//         &:hover {
+//             background-color: darken($naranja, 10%);
+//         }
+//     }
+//     .iconos-caracteristicas {
+//         filter: brightness(0) invert(1); // inverte el color de las imágenes 
+//     }
+// }
+
+.formulario {
+    label, legend, p {
+        color: $gris;
+    }
+    input:not([type="submit"]), 
+    textarea,
+    select { 
+        background-color: $grisOscuro;
+        border: 1px solid $grisOscuro;
+
         color: $blanco;
-        input {
-            background-color: $gris;
-        }
-        textarea {
-            background-color: $gris;
-        }
-        select {
-            background-color: $gris;
-        }
     }
-    input.boton-verde{
-        &:hover {
-            background-color: darken($naranja, 10%);
-        }
-    }
-    .iconos-caracteristicas {
-        filter: brightness(0) invert(1); // inverte el color de las imágenes 
-    }
+  }
+  .iconos-caracteristicas {
+    filter: brightness(0) invert(1); // inverte el color de las imágenes o iconos
+  }
 }
