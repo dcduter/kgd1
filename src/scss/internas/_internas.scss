@@ -12,7 +12,7 @@
     
 }
 
-/* logo de whatsapp */
+/* ---------------logo de whatsapp ---------------*/
 .float {
     position: fixed;
     width: 60px;
@@ -32,7 +32,7 @@
 .float:hover {
    background-color: #18e463;
 }
-
+/* -------------------------------------------------------- */
 @include tablet {
     .contenedor.seccion {
         &.top {
@@ -40,6 +40,7 @@
         }
     }
 }
+
 
 @include tablet {
     .header.fixed {

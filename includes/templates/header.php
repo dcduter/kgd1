@@ -43,13 +43,13 @@ $auth = $_SESSION['login'] ?? false;
       <div class="contenedor contenido-header">
         <div class="barra">
           <a href="/">
-            <img class="logo-header" src="/build/img/logo_grande.svg" alt="logo de bienes raices" /> <!-- logo -->
+            <img class="logo-header" src="/build/img/logo_grande.svg" alt="logo de bienes raices"/> <!-- logo -->
           </a>
           <div class="mobile-menu">
-            <img src="/build/img/barras.svg" alt="icono menu responsibe" />
+            <img src="/build/img/barras.svg" alt="icono menu responsibe"/>
           </div>
           <div class="derecha">
-            <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="icono dark mode"> 
+            <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="icono dark mode"/>
             <nav class="navegacion">
               <a href="nosotros.php">Nosotros</a>
               <a href="anuncios.php">Trabajos</a>

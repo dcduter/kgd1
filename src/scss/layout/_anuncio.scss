@@ -96,36 +96,3 @@
   span {
     color: #666;
   }
-
-  .container {
-    margin: 0;
-    padding: 500px;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: #15163f;
-  }
-.btn {
-  display: inline-block;
-  padding: 50px;
-  margin: 60px;
-  height: 60px;
-}
-.animated-button {
-  // background-color: #4CAF50;
-  color: #ffffff;
-  // padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.animated-button:hover {
-  background-color: #3e8e41;
-  transition: background-color 0.5s ease;
-}
-
-.animated-button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}

@@ -4,7 +4,6 @@ require "includes/funciones.php";
 
 incluirTemplate('header');
 ?>
-
     <main class="contenedor seccion top">
     <!-- //propiedad para centrar a 800px contenido-centrado -->
         <h1>Modelado 3D y Ensamble</h1>
@@ -17,14 +16,12 @@ incluirTemplate('header');
             <source srcset="build/img/Modelado con ecuaciones - copia.jpg" type="image/jpeg">
             <img loading="lazy" src="build/img/Modelado con ecuaciones - copia.jpg" alt="casa">
         </picture>
-   
         
         <?php 
             $limite = 3;
             include "includes/templates/anuncios.php";
         ?>
        
-
         <section class="listado-precios" >
             <h2>Listado de Precios</h2>
             <div class="contenedor-listado">
@@ -43,7 +40,6 @@ incluirTemplate('header');
 
             </div>
         </section>
-  
-           
+   
     </main>
     <?php incluirTemplate('footer'); ?>

@@ -4,7 +4,7 @@ require "includes/funciones.php";
 
 incluirTemplate('header', $inicio = true);
 ?>
-    <main class="contenedor seccion top">
+    <main class="contenedor seccion">
             <h2 >Más Sobre Nosotros</h2>
             <div class="iconos-nosotros">
                 <!-- <div class="icono">
@@ -46,7 +46,7 @@ incluirTemplate('header', $inicio = true);
        
     <div class="contenedor seccion seccion-inferior">
         <section class="blog">
-            <h3 >Nuestro Blog</h3>
+            <h2 >Nuestro Blog</h2>
             
             <article class="entrada-blog">
                 <div class="imagen">
@@ -66,7 +66,7 @@ incluirTemplate('header', $inicio = true);
             </article>
         </section> <!-- blog -->
         <section class="testimoniales">
-            <h3 >Opiniones</h3>
+            <h2 >Opiniones</h2>
             <div class="testimonial">
                 <blockquote>
                     <p >Excelente servicio, muy profesional y amable, los tiempos de entrega son rapidos</p>

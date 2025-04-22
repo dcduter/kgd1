@@ -4,14 +4,11 @@ require "includes/funciones.php";
 
 incluirTemplate('header');
 ?>
-
-    <main class="contenedor seccion seccion-blog">
+    <main class="contenedor seccion top seccion-blog">
         <h1>Nuestros clientes</h1>
 
         <p>Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p>
 
-
-        
         <section class="listado-precios" >
             <h2>Listado de Precios</h2>
             <div class="contenedor-listado">
@@ -31,7 +28,6 @@ incluirTemplate('header');
             </div>
         </section>
 
-  
         </article>
         <article class="entrada-blog">
             <div class="imagen">
@@ -49,7 +45,6 @@ incluirTemplate('header');
                 </a>
             </div>
         </article>
-
       
     </main>
     <?php incluirTemplate('footer'); ?>

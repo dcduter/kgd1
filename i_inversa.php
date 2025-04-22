@@ -27,7 +27,7 @@ incluirTemplate('header');
         ?>
 
         <section class="listado-precios" >
-            <h2>Listado de Precios</h2>
+            <h3>Listado de Precios</h3>
             <div class="contenedor-listado">
                 <div class="precio">
                     <h3>Modelado Básisco  + Plano (Modo Básico) $20.000</h3>
