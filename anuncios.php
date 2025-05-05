@@ -1,5 +1,5 @@
 <?php 
-require "includes/funciones.php";
+require "includes/app.php";
 
 if(!isset($_SESSION)){
   session_start();

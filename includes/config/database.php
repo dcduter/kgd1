@@ -1,7 +1,7 @@
 <?php
 
 function conectarDB(): mysqli {
-    $db = mysqli_connect('localhost', 'root', '', 'kdg_crud');
+    $db = new mysqli('localhost', 'root', '', 'kdg_crud');
 
     if(!$db) {
         echo "Error al conectar a la base de datos";

@@ -1,7 +1,14 @@
 <?php 
 // base de datos
-require "../../includes/config/database.php";
-require "../../includes/funciones.php";
+
+use App\Propiedad;
+
+require "../../includes/app.php";
+
+// use App\Propiedad;
+// creando un objeto de la clase de Propiedad de la carpeta de clases
+//$propiedad = new Propiedad;
+
 $db = conectarDB();
 $auth = estaAutenticado();
 
@@ -27,6 +34,7 @@ $vendedores_id = ''; /* permite crear la variable $vendedores_id */
 // $inicio = false;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la solicitud  al dar click en crear plano*/
+    $propiedad = new Propiedad($_POST);
     // echo "<pre>";
     // var_dump($_POST);
     // echo "</pre>";
@@ -75,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
         // crear carpeta
         $carpetaImagenes = '../../imagenes';
         if (!is_dir($carpetaImagenes)) { // para sabre si existe la carpeta 
-            mkdir($carpetaImagenes);
+            mkdir($carpetaImagenes); 
         }
 
         // Generar un nombre único para la imagen
@@ -134,6 +142,7 @@ incluirTemplate('header');
             <input type="text" id="seccion" name="seccion" placeholder="Sección" required value="<?php echo $seccion; ?>">
             <fieldset>
                 <legend>Ingeniero</legend>
+
                 <label for="vendedores_id">Vendedor:</label>
                 <select id="vendedores_id" name="vendedores_id">
                     <option value="">-- Seleccione un vendedor --</option>

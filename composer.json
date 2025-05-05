@@ -1,0 +1,17 @@
+{
+    "name": "asus/kgd_inicio_copia",
+    "description": "Proyecto web diseño mecanico KGD",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Juan C.",
+            "email": "diegonovoa001@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./clases"
+        }
+    }
+}

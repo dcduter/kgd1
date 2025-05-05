@@ -1,5 +1,6 @@
 <?php
-require "../includes/funciones.php";
+// require "../includes/funciones.php";
+require "../includes/app.php";
 $auth = estaAutenticado();
 
 if(!$auth) {
@@ -7,7 +8,7 @@ if(!$auth) {
 }
 
 // conectar base de datos
-require '../includes/config/database.php';
+// require '../includes/config/database.php';
 $db = conectarDB();
 
 // escribir el query

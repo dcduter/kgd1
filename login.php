@@ -1,6 +1,7 @@
 <?php 
 // importar la conexion
-require 'includes/config/database.php';
+//require 'includes/config/database.php';
+require 'includes/app.php';
 $db = conectarDB();
 
 $errores = [];
@@ -42,13 +43,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
        }
   }
 }
-
-require "includes/funciones.php";
 // $inicio = false;
 
 incluirTemplate('header');
 ?>
-    <main class="contenedor seccion contenido-centrado">
+    <main class="contenedor seccion contenido-centrado top">
         <h1>Iniciar Sesión</h1>
 
         <?php foreach($errores as $error): ?>

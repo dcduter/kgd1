@@ -1,6 +1,14 @@
 
 <?php 
+require 'funciones.php';
+require 'config/database.php';
+// require 'clases/Propiedad.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-define('TEMPLATES_URL', __DIR__ . '/templates'); // se define la ruta de los templates
-define('FUNCIONES_URL', __DIR__ . '/funciones.php'); // se define la ruta de las funciones
+//conectarse a la base de datos
+$db = conectarDB();
+
+use App\Propiedad;
+//acceder a la base de datos
+Propiedad::setDB($db);
 ?>
