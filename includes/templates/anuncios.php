@@ -17,7 +17,7 @@ $resultado = mysqli_query($db, $query);
             <div class="anuncios">
                 <picture>
                  
-                    <img loading="lazy" src="/imagenes/<?php echo $plano['imagen']; ?>" alt="anuncio">
+                    <img loading="lazy" src="/imagenes/<?php echo $plano['imagen']; ?>" alt="anuncio" width="335px" height="335px">
                 </picture>
                 <div class="contenedor-anuncio">
                     <h3><?php echo $plano['titulo']; ?></h3>

@@ -145,7 +145,7 @@ incluirTemplate('header');
     <main class="contenedor seccion top">
         <h1>Actualizar</h1>
 
-        <p >Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p>
+        <!-- <p >Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p> -->
   
         <a href="/admin" class="boton boton-verde">Volver</a>
 

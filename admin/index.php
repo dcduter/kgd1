@@ -86,7 +86,9 @@ incluirTemplate('header');
                             <input type="submit"  class="boton-rojo" value="Eliminar">
                         </form>
                         
-                        <a href="admin/propiedades/actualizar.php?id=<?php echo $plano['id']; ?>" class="boton-amarillo">Editar</a>
+                        <!-- <a href="admin/propiedades/actualizar.php?id=<?php echo $plano['id']; ?>" class="boton-amarillo">Editar</a> -->
+                        <!-- ruta en el servidor -->
+                        <a href="propiedades/actualizar.php?id=<?php echo $plano['id']; ?>" class="boton-amarillo">Editar</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>

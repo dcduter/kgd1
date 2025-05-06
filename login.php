@@ -48,7 +48,7 @@ require "includes/funciones.php";
 
 incluirTemplate('header');
 ?>
-    <main class="contenedor seccion contenido-centrado">
+    <main class="contenedor seccion contenido-centrado top">
         <h1>Iniciar Sesión</h1>
 
         <?php foreach($errores as $error): ?>
