@@ -18,14 +18,13 @@ incluirTemplate('header');
                 <blockquote>
                     <p >Más de 7 años de experiencia</p>
                 </blockquote>
-                <p >Somos un emprendimiento que se enfoca en el área de diseño mecánico, en el cual mediante software CAD generamos piezas y ensamblajes, respecto a las necesidades de nuestros clientes. </p>
+                <p >Somos una empresa que se enfoca en el área de diseño mecánico, en el cual mediante software CAD generamos piezas y ensamblajes, respecto a las necesidades de nuestros clientes. </p>
                 <p >También nos especializamos en desarrollar planos de piezas mecánicas aplicando el concepto de Ingeniera Inversa.</p>
                 <p >Trabajamos para empresas en diferentes campos de mecánica, y también en el área universitaria.</p>
             </div>
         </div> <br><br><!-- contenido-nosotros -->
        
         <section>
-            
             <!-- <div class="imagen">
               
                 <picture>
@@ -45,8 +44,6 @@ incluirTemplate('header');
                
             </div>
         </section> <!-- contenido-nosotros -->
-
-
     </main>
 
     <?php incluirTemplate('footer'); ?>
