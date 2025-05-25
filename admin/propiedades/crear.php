@@ -21,7 +21,7 @@ $descripcion = ''; /* permite crear la variable $descripcion */
 $precio = ''; /* permite crear la variable $precio */
 $imagen = '';
 $seccion = ''; /* permite crear la variable $seccion */
-$vendedores_id = ''; /* permite crear la variable $vendedores_id */
+//$vendedores_id = ''; /* permite crear la variable $vendedores_id */
 
 
 // $inicio = false;
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
     $precio = mysqli_real_escape_string($db, $_POST['precio']);
     // $imagen = mysqli_real_escape_string($db, $_POST['imagen']);
     $seccion = mysqli_real_escape_string($db, $_POST['seccion']);
-    $vendedores_id = mysqli_real_escape_string($db, $_POST['vendedores_id']);
+    //$vendedores_id = mysqli_real_escape_string($db, $_POST['vendedores_id']);
     $creado = date('Y/m/d');
     //files a una variable
     $imagen = $_FILES['imagen'];
@@ -58,9 +58,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
     if (!$seccion) {
         $errores[] = "La sección es obligatoria";
     }
-    if (!$vendedores_id) {
-        $errores[] = "El vendedor es obligatorio";
-    }
+    // if (!$vendedores_id) {
+    //     $errores[] = "El vendedor es obligatorio";
+    // }
     //validar por tamaño
     $medida = 2000 * 2000;
 
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { /* permite ver el contenido de la s
         // Mover la imagen a la carpeta
         move_uploaded_file($imagen['tmp_name'], $carpetaImagenes . '/' . $nombreImagen);
 
-        $query = "INSERT INTO planos (titulo, precio, imagen, descripcion, seccion, creado, vendedores_id) VALUES ('{$titulo}', '{$precio}', '{$nombreImagen}', '{$descripcion}', '{$seccion}', '{$creado}', '{$vendedores_id}')";
+        $query = "INSERT INTO planos (titulo, precio, imagen, descripcion, seccion, creado) VALUES ('{$titulo}', '{$precio}', '{$nombreImagen}', '{$descripcion}', '{$seccion}', '{$creado}')";
         $result = mysqli_query($db, $query);
         if ($result) {
             // redireccionar al usuario
@@ -132,7 +132,7 @@ incluirTemplate('header');
             </fieldset>
             <label for="seccion">Sección:</label>
             <input type="text" id="seccion" name="seccion" placeholder="Sección" required value="<?php echo $seccion; ?>">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Ingeniero</legend>
                 <label for="vendedores_id">Vendedor:</label>
                 <select id="vendedores_id" name="vendedores_id">
@@ -142,7 +142,7 @@ incluirTemplate('header');
                     <?php endwhile; ?>
                 </select>
                     
-            </fieldset>
+            </fieldset> -->
             <input type="submit" value="Crear Plano" class="boton boton-verde">
         </form>
     </main>

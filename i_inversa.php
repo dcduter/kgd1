@@ -26,7 +26,7 @@ incluirTemplate('header');
             include "includes/templates/anuncios.php";
         ?>
 
-        <section class="listado-precios" >
+        <!-- <section class="listado-precios" >
             <h3>Listado de Precios</h3>
             <div class="contenedor-listado">
                 <div class="precio">
@@ -43,6 +43,6 @@ incluirTemplate('header');
                 </div>
 
             </div>
-        </section>
+        </section> -->
     </main>
     <?php incluirTemplate('footer'); ?>

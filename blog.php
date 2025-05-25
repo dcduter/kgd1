@@ -8,8 +8,9 @@ incluirTemplate('header');
         <h1>Nuestros clientes</h1>
 
         <p>Trabajamos con personas de todas las industrias relacionadas con Ingeniería Mecánica. Hemos tenido clientes empresariales y universitarios con diferentes necesidades en sus proyectos o trabajos sencillos.</p>
+        <br>
 
-        <section class="listado-precios" >
+        <!-- <section class="listado-precios" >
             <h2>Listado de Precios</h2>
             <div class="contenedor-listado">
                 <div class="precio">
@@ -26,7 +27,7 @@ incluirTemplate('header');
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
         </article>
         <article class="entrada-blog">
