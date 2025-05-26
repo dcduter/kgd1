@@ -23,8 +23,8 @@ $resultado = mysqli_query($db, $consulta);
 $plano = mysqli_fetch_assoc($resultado);
 
 //consultar obtener los vendedores
-$consulta = "SELECT * FROM vendedores";
-$resultado = mysqli_query($db, $consulta);
+// $consulta = "SELECT * FROM vendedores";
+// $resultado = mysqli_query($db, $consulta);
 
 // errores al llenar el formulario
 $errores = [];
