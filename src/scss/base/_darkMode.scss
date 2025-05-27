@@ -55,5 +55,11 @@
   }
   .iconos-caracteristicas {
     filter: brightness(0) invert(1); // inverte el color de las imágenes o iconos
+    li {
+      color: $blanco;
+    }
   }
+}
+.contenedor > h1 {
+  color: $blanco;
 }

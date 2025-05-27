@@ -1,62 +1,57 @@
-@use 'base/variables';
-@use 'base/mixins';
-@use 'sass:color';
+@use "base/variables";
+@use "base/mixins";
+@use "sass:color";
 .no-webp .inicio {
-    background-image: url(../img/fondoengranajes.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    filter: brightness(50%);
-    // max-width: 100%;
+  background-image: url(../img/fondoengranajes.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  filter: brightness(50%);
+  // max-width: 100%;
 }
 .webp .inicio {
-    background-image: url(../img/engranajes2.webp) ;
-    inset: 0;// se usa para que el fondo se adapte a la pantalla
-    background-position: left;
+  background-image: url(../img/engranajes2.webp);
+  inset: 0; // se usa para que el fondo se adapte a la pantalla
+  background-position: left;
 }
 
 .header {
-    background-color:$grisOscuro;
-    // filter: brightness(50%);
-    // padding: 1rem 0 3rem 0;
+  background-color: $grisOscuro;
+  // filter: brightness(50%);
+  // padding: 1rem 0 3rem 0;
 
-    &.inicio {
-        background-position: center center;
-        background-size: cover;
-        &::before {
-            filter: brightness(50%);
-        }
-        @include tablet {
-            min-height: 70rem;
-        }
-        .contenido-header {
-            @include tablet {
-                min-height: 70rem;
-            }
-        
-        }
+  &.inicio {
+    background-position: center center;
+    background-size: cover;
+    &::before {
+      filter: brightness(50%);
     }
+    @include tablet {
+      min-height: 70rem;
+    }
+    .contenido-header {
+      @include tablet {
+        min-height: 70rem;
+      }
+    }
+  }
 }
 .contenido-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    h1 {
-        text-align: left;
-        color: rgb(49, 105, 49);
-        font-weight: $bold;
-        font-size: 5rem;
-        line-height: 2;
-        max-width: 70rem;
-        max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    text-align: left;
+    color: rgb(45, 136, 45);
+    font-weight: $bold;
+    font-size: 5rem;
+    line-height: 2;
+    max-width: 70rem;
+    max-width: 40rem;
+  }
+  h1 {
+    @include tablet {
+      // text-align: center;
     }
-    h1 {
-        @include tablet {
-       
-            // text-align: center;
-        }
-    }
+  }
 }
-
-
-

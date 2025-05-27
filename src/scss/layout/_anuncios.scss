@@ -1,5 +1,4 @@
-
-@use 'base/variables';
+@use "base/variables";
 .anuncio {
   // background-color: hsl(0, 2%, 54%);
   padding: 30px;
@@ -10,51 +9,50 @@
   border-radius: 50%;
   // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   //codigo de gpt 4
-  background: linear-gradient(100deg, #e5f1b8, #666,  #e5f1b8);
+  background: linear-gradient(100deg, #e5f1b8, #666, #e5f1b8);
   // color: #ffffff;
   padding: 20px 0;
   text-align: center;
-  h3{
+  h3 {
     font-size: 5rem;
   }
-  p, a {
+  p,
+  a {
     margin-left: 2rem;
   }
-
 }
-  
-  .fondo {
-    background: url('../../../build/img/clockwork-4651185_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    
-  }
 
-  .division {
-    border-bottom: 1px solid white;
-  }
+.fondo {
+  background: url("../../../build/img/clockwork-4651185_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 
-  .anuncio {
-    
-    background-color: lighten($gris, 5);
-    border: 1px solid darken($gris, 10);
-    .contenedor-anuncio {
-        padding: 2rem;
-    }
-    h3, p {
-        margin: 0;
-    }
-    .precio {
-        color: $verde;
-        font-weight: $bold;
-    }
-    p {
-      font-family: $fuente_principal;
-      font-size: 4rem;
-      padding: 4rem;
-    }
+.division {
+  border-bottom: 1px solid white;
+}
+
+.anuncio {
+  background-color: lighten($gris, 5);
+  border: 1px solid darken($gris, 10);
+  .contenedor-anuncio {
+    padding: 2rem;
+  }
+  h3,
+  p {
+    margin: 0;
+  }
+  .precio {
+    color: $verde;
+    font-weight: $bold;
+  }
+  p {
+    font-family: $fuente_principal;
+    font-size: 4rem;
+    padding: 4rem;
+  }
 }
 .precio {
   color: white;

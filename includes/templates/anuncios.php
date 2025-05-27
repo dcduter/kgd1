@@ -25,13 +25,20 @@ $resultado = mysqli_query($db, $query);
                     <p class="precio">Precio: <?php echo $plano['precio']; ?></p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc">
+                            <!-- <img loading="lazy" src="build/img/cogwheel_idea_icon.png" alt="icono wc"> -->
+                            <i class="fa-solid fa-wrench" width="20px" height="20px"></i>
                         </li>
                         <li>
-                            <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento">
+                            <!-- <img loading="lazy" src="build/img/measurement_ruler_tape_icon.png" alt="icono estacionamiento"> -->
+                            <i class="fa-solid fa-ruler" width="20px" height="20px" color="red"></i>
                         </li>
                         <li>
-                            <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono dormitorio">   
+                            <!-- <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono dormitorio">    -->
+                            <i class="fa-solid fa-calculator icons" width="20px" height="20px" color="red"></i>
+                        </li>
+                        <li>
+                            <!-- <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono dormitorio">    -->
+                            <i class="fa-solid fa-car icons" width="20px" height="20px" color="red"></i>
                         </li>
                     </ul>
                     <!-- <a class="boton boton-amarillo" href="anuncio.php?id=<?php echo $plano['id']; ?>">Ver más</a> -->

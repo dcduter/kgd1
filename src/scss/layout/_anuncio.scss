@@ -1,7 +1,7 @@
 @include tablet {
-    .contenedor-anuncios {
-        @include grid(3, 2rem);
-    }
+  .contenedor-anuncios {
+    @include grid(3, 2rem);
+  }
 }
 
 .anuncios {
@@ -29,70 +29,70 @@
   }
 }
 .iconos-caracteristicas li:last-of-type {
-  margin-right: .7rem;
+  margin-right: 0.7rem;
 }
 .iconos-caracteristicas {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  li {
+    flex: 1;
+    font-size: 2rem;
+    color: black;
     display: flex;
-    list-style: none;
-    padding: 0;
-    li {
-        flex: 1;
-        display: flex;
-        img {
-
-            flex: 0 0 5rem;
-            // margin: 1rem;
-            padding: 1rem;
-        }
-        p {
-            font-weight: $black;
-        }
+    img {
+      flex: 0 0 5rem;
+      // margin: 1rem;
+      padding: 1rem;
     }
-    
+    p {
+      font-weight: $black;
+    }
+  }
+}
+.iconos-caracteristicas > li {
+  margin-left: 35px;
 }
 
+h3 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
 
-  
-  h3 {
-    margin-top: 0;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .more-info {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .more-info:hover {
-    background-color: #3e8e41;
-  }
+.more-info {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-  ul:not([type="value"]) {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-   
-    border-bottom: 1px solid #ddd;
-  }
-  
-  li:last-child {
-    border-bottom: none;
-  }
-  
-  p {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  span {
-    color: #666;
-  }
+.more-info:hover {
+  background-color: #3e8e41;
+}
+
+ul:not([type="value"]) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// li {
+//   border-bottom: 1px solid #ddd;
+// }
+
+li:last-child {
+  border-bottom: none;
+}
+
+p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+span {
+  color: #666;
+}
